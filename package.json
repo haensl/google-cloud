@@ -1,0 +1,58 @@
+{
+  "name": "@haensl/google-cloud",
+  "version": "1.0.0",
+  "description": "Useful things around Google Cloud",
+  "keywords": [
+    "Google",
+    "Cloud",
+    "Google",
+    "Cloud",
+    "Admin",
+    "SDK",
+    "Admin",
+    "SDK",
+    "Authorization",
+    "JWT"
+  ],
+  "homepage": "https://github.com/haensl/google-cloud#readme",
+  "bugs": {
+    "url": "https://github.com/haensl/google-cloud/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haensl/google-cloud.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "HP Dietz",
+    "url": "https://hpdietz.com",
+    "email": "h.p.dietz@gmail.com"
+  },
+  "funding": "https://github.com/sponsors/haensl",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint '**/*.js'",
+    "lint:junit": "ESLINT_USE_FLAT_CONFIG=true eslint --format junit -o test-results/eslint/results.xml '**/*.js'",
+    "prepare": "if [ ${NODE_ENV} != 'production' ]; then husky; fi",
+    "test": "jest --runInBand --no-cache --colors",
+    "test:junit": "jest --runInBand --no-cache --ci --reporters='default' --reporters='jest-junit'",
+    "tdd": "jest --colors --watch"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@haensl/eslint-config": "^2.0.0",
+    "eslint": "^9.31.0",
+    "eslint-formatter-junit": "^8.40.0",
+    "google-auth-library": "^10.1.0",
+    "husky": "^9.1.7"
+  },
+  "dependencies": {
+    "@haensl/http": "^1.1.1"
+  },
+  "peerDependencies": {
+    "google-auth-library": "^10.1.0"
+  }
+}
