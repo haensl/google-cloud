@@ -1,0 +1,5 @@
+.circle-ci/
+.DS_Store
+eslint.config.js
+CHANGELOG.md
+*.tgz
