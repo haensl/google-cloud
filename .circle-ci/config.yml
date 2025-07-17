@@ -125,7 +125,6 @@ jobs:
             - package.json
             - package-lock.json
             - index.js
-            - measurement-protocol.js
             - .npmignore
             - haensl-google-cloud.tgz
 
